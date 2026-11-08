@@ -616,6 +616,13 @@ main {
   line-height: 1.6;
 }
 
+/* company names: kept out of machine translation, styled as the title */
+.timeline-item-title .company {
+  display: inline;
+  color: inherit;
+  font: inherit;
+}
+
 .timeline-item:not(:last-child)::before {
   content: "";
   position: absolute;
