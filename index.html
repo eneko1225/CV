@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#121212">
   <title>Eneko Medel</title>
 
   <!--
@@ -22,10 +24,13 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <a class="skip-link" href="#main-content" data-i18n="skip_link">Skip to content</a>
 
   <!--
     - #MAIN
@@ -42,28 +47,28 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/profilePick.png" alt="Eneko Medel Img" width="80">
+          <img src="./assets/images/profilePick.png" alt="Eneko Medel" width="80" height="80" fetchpriority="high">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Eneko Medel">Eneko Medel</h1>
+          <h1 class="name" title="Eneko Medel" translate="no">Eneko Medel</h1>
           <p class="title" data-i18n="headline">Project Manager &amp; Backend Developer</p>
 
-          <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <div class="lang-switch" role="group" translate="no" aria-label="Idioma / Language">
             <button type="button" class="lang-option" data-lang-option="es" lang="es" aria-label="Español">ES</button>
             <button type="button" class="lang-option" data-lang-option="en" lang="en" aria-label="English">EN</button>
           </div>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <button type="button" class="info_more-btn" data-sidebar-btn aria-expanded="false" aria-controls="sidebar-contacts">
           <span data-i18n="show_contacts">Show Contacts</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
+          <ion-icon aria-hidden="true" name="chevron-down"></ion-icon>
         </button>
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div class="sidebar-info_more" id="sidebar-contacts">
 
         <div class="separator"></div>
 
@@ -72,13 +77,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="mail-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title" data-i18n="contact_email">Email</p>
 
-              <a href="mailto:enekomgbo@gmail.com" class="contact-link">enekomgbo@gmail.com</a>
+              <a href="mailto:enekomgbo@gmail.com" class="contact-link" translate="no">enekomgbo@gmail.com</a>
             </div>
 
           </li>
@@ -86,13 +91,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="phone-portrait-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title" data-i18n="contact_phone">Phone</p>
 
-              <a href="tel:+34688883663" class="contact-link">+34 688 88 36 63</a>
+              <a href="tel:+34688883663" class="contact-link" translate="no">+34&nbsp;688&nbsp;88&nbsp;36&nbsp;63</a>
             </div>
 
           </li>
@@ -100,13 +105,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="calendar-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title" data-i18n="contact_birthday">Birthday</p>
 
-              <time datetime="2001-12-25" data-i18n="birthday">December 25, 2001</time>
+              <time datetime="2001-12-25" data-i18n-date>December 25, 2001</time>
             </div>
 
           </li>
@@ -114,7 +119,7 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="location-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
@@ -163,7 +168,7 @@
       - #main-content
     -->
 
-    <div class="main-content">
+    <div class="main-content" id="main-content">
 
       <!--
         - #NAVBAR
@@ -174,11 +179,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link="about" data-i18n="nav_about">About</button>
+            <button type="button" class="navbar-link  active" data-nav-link="about" data-i18n="nav_about" aria-current="page">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="resume" data-i18n="nav_resume">Resume</button>
+            <button type="button" class="navbar-link" data-nav-link="resume" data-i18n="nav_resume">Resume</button>
           </li>
           <li style="display: none" class="navbar-item">
             <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
@@ -238,8 +243,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="" width="40" height="32" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -255,7 +259,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -271,7 +275,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="" width="40" height="40" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -287,7 +291,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-photo.svg" alt="" width="40" height="30" loading="lazy">
               </div>
 
               <div class="service-content-box">
@@ -524,7 +528,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
             </div>
 
             <h3 class="h3" data-i18n="experience_title">Experience</h3>
@@ -541,7 +545,7 @@
               <p class="timeline-text" data-i18n="exp1_text">
                 I lead a <strong>SaaS audio platform for retail</strong>: a single dashboard where store chains decide what plays in every shop, from background music to ad campaigns and announcements. I own the product and roadmap, set priorities with business and clients, steer each release from analysis to deployment, and bring new clients and integrations on board.<br/><br/>
 
-                Highlights of what the team has built: an engine that schedules each store's music and ads every day, a web and mobile player that keeps playing offline and streams to <strong>AirPlay and Chromecast</strong> speakers, an AI support assistant powered by <strong>Google Gemini</strong> in the app and on WhatsApp, music catalog ingestion through the <strong>DDEX</strong> standard, and <strong>Stripe</strong> billing with role-based access, royalty reports and analytics.<br/><br/>
+                Highlights of what the team has built: an engine that schedules each store’s music and ads every day, a web and mobile player that keeps playing offline and streams to <strong>AirPlay and Chromecast</strong> speakers, an AI support assistant powered by <strong>Google Gemini</strong> in the app and on WhatsApp, music catalog ingestion through the <strong>DDEX</strong> standard, and <strong>Stripe</strong> billing with role-based access, royalty reports and analytics.<br/><br/>
 
                 Stack: <strong>Python, Django, Celery, PostgreSQL, Redis, React, TypeScript, Docker, AWS, CI/CD</strong>.
               </p>
@@ -569,7 +573,7 @@
               <span>12/2022 — 05/2023</span>
 
               <p class="timeline-text" data-i18n="exp3_text">
-                Developed APIs in <strong>PHP and Python</strong>, maintained <strong>GitLab CI/CD</strong> pipelines, <strong>designed data architectures</strong> and led version migrations, both for clients such as Kutxabank and ALC and for the agency's own products.
+                Developed APIs in <strong>PHP and Python</strong>, maintained <strong>GitLab CI/CD</strong> pipelines, <strong>designed data architectures</strong> and led version migrations, both for clients such as Kutxabank and ALC and for the agency’s own products.
               </p>
 
             </li>
@@ -593,7 +597,7 @@
               <span>09/2021 — 05/2022</span>
 
               <p class="timeline-text" data-i18n="exp5_text">
-                Developed, maintained and improved the company's in-house products, including a motorcycle geolocation app and an integration middleware, using <strong>Node.js, Laravel, Django, Vue.js, MySQL and Docker</strong>.
+                Developed, maintained and improved the company’s in-house products, including a motorcycle geolocation app and an integration middleware, using <strong>Node.js, Laravel, Django, Vue.js, MySQL and Docker</strong>.
               </p>
 
             </li>
@@ -619,7 +623,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
             </div>
 
             <h3 class="h3" data-i18n="education_title">Education</h3>
@@ -629,7 +633,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="edu1_title">Master's Degree in Big Data and Artificial Intelligence</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu1_title">Master’s Degree in Big Data and Artificial Intelligence</h4>
 
               <span>09/2022 — 06/2023</span>
 

@@ -5,12 +5,12 @@
 
 const translations = {
   es: {
+    skip_link: "Saltar al contenido",
     headline: "Project Manager y Desarrollador Backend",
     show_contacts: "Ver contactos",
     contact_email: "Correo",
     contact_phone: "Teléfono",
     contact_birthday: "Fecha de nacimiento",
-    birthday: "25 de diciembre de 2001",
     contact_location: "Ubicación",
     location: "Bilbao, Bizkaia, España",
 
@@ -65,6 +65,7 @@ const translations = {
 const i18nElements = document.querySelectorAll("[data-i18n]");
 const langOptions = document.querySelectorAll("[data-lang-option]");
 const englishText = new Map();
+const i18nDates = document.querySelectorAll("time[data-i18n-date]");
 
 i18nElements.forEach(function (elem) { englishText.set(elem, elem.innerHTML); });
 
@@ -74,6 +75,12 @@ const setLanguage = function (lang) {
   i18nElements.forEach(function (elem) {
     const key = elem.dataset.i18n;
     elem.innerHTML = dict[key] !== undefined ? dict[key] : englishText.get(elem);
+  });
+
+  // dates come from their datetime attribute, formatted for the language
+  i18nDates.forEach(function (elem) {
+    const date = new Date(elem.getAttribute("datetime") + "T00:00:00Z");
+    elem.textContent = new Intl.DateTimeFormat(lang, { dateStyle: "long", timeZone: "UTC" }).format(date);
   });
 
   document.documentElement.lang = lang;
