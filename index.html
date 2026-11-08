@@ -47,11 +47,11 @@
 
         <div class="info-content">
           <h1 class="name" title="Eneko Medel">Eneko Medel</h1>
-          <p class="title">Project Manager &amp; Backend Developer</p>
+          <p class="title" data-i18n="headline">Project Manager &amp; Backend Developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-i18n="show_contacts">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title" data-i18n="contact_email">Email</p>
 
               <a href="mailto:enekomgbo@gmail.com" class="contact-link">enekomgbo@gmail.com</a>
             </div>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title" data-i18n="contact_phone">Phone</p>
 
               <a href="tel:+34688883663" class="contact-link">+34 688 88 36 63</a>
             </div>
@@ -99,9 +99,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title" data-i18n="contact_birthday">Birthday</p>
 
-              <time datetime="2001-12-25">December 25, 2001</time>
+              <time datetime="2001-12-25" data-i18n="birthday">December 25, 2001</time>
             </div>
 
           </li>
@@ -113,9 +113,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title" data-i18n="contact_location">Location</p>
 
-              <address>Bilbao, Biscay, Spain</address>
+              <address data-i18n="location">Bilbao, Biscay, Spain</address>
             </div>
 
           </li>
@@ -169,23 +169,27 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link="about" data-i18n="nav_about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link="resume" data-i18n="nav_resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link lang-toggle" data-lang-toggle aria-label="Ver en español">ES</button>
           </li>
 
           <li style="display: none" class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
           </li>
 
           <li style="display: none" class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
           </li>
 
           <li style="display: none" class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
           </li>
 
         </ul>
@@ -203,19 +207,19 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-i18n="about_title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p data-i18n="about_p1">
             I was five years old when I sat down at my first computer and started typing MS-DOS commands. Robotics classes after school kept that curiosity alive, and when I wrote my first lines of code in high school I knew this was what I wanted to do. That led me to a higher degree in cross-platform application development, and I have been building software ever since.
           </p>
 
-          <p>
+          <p data-i18n="about_p2">
             Over the years I have worked across the whole stack: websites for Metro Bilbao and the Bilbao Fine Arts Museum, APIs for agencies and their clients, and three years of data and cloud services on AWS at BBVA Technology. Along the way I completed a specialization in Big Data and Artificial Intelligence.
           </p>
 
-          <p>
+          <p data-i18n="about_p3">
             Today I am Project Manager at INDALTER, where I lead a SaaS audio platform for retail from product definition all the way to deployment. I enjoy bridging business and engineering: understanding what a client needs, turning it into a clear plan, and making sure the team ships it well.
           </p>
         </section>
@@ -227,7 +231,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What I do</h3>
+          <h3 class="h3 service-title" data-i18n="services_title">What I do</h3>
 
           <ul class="service-list">
 
@@ -239,9 +243,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Product &amp; Project Management</h4>
+                <h4 class="h4 service-item-title" data-i18n="service1_title">Product &amp; Project Management</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service1_text">
                   Shape the product vision and roadmap, prioritize with business and clients, and guide every release from analysis and design through development, QA and deployment.
                 </p>
               </div>
@@ -255,9 +259,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Development</h4>
+                <h4 class="h4 service-item-title" data-i18n="service2_title">Backend Development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service2_text">
                   Build reliable APIs and services in Python (Django, Flask, Celery), Rust and PHP on top of PostgreSQL, MySQL, MongoDB and Redis, with tests, SOLID principles and clean code.
                 </p>
               </div>
@@ -271,9 +275,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud &amp; Data on AWS</h4>
+                <h4 class="h4 service-item-title" data-i18n="service3_title">Cloud &amp; Data on AWS</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service3_text">
                   Design data pipelines and serverless services on AWS (SageMaker, S3, Lambda, Step Functions, EventBridge, CloudWatch), defined as code with Terraform.
                 </p>
               </div>
@@ -287,9 +291,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps &amp; CI/CD</h4>
+                <h4 class="h4 service-item-title" data-i18n="service4_title">DevOps &amp; CI/CD</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service4_text">
                   Package applications with Docker and automate build, testing and deployment with CI/CD pipelines, so every release is fast, repeatable and safe.
                 </p>
               </div>
@@ -513,7 +517,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-i18n="resume_title">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -523,7 +527,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-i18n="experience_title">Experience</h3>
           </div>
 
           <ol class="timeline-list">
@@ -532,9 +536,9 @@
 
               <h4 class="h4 timeline-item-title">Project Manager - INDALTER</h4>
 
-              <span>06/2026 — Present</span>
+              <span data-i18n="exp1_date">06/2026 — Present</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp1_text">
                 I lead a <strong>SaaS audio platform for retail</strong>: a single dashboard where store chains decide what plays in every shop, from background music to ad campaigns and announcements. I own the product and roadmap, set priorities with business and clients, steer each release from analysis to deployment, and bring new clients and integrations on board.<br/><br/>
 
                 Highlights of what the team has built: an engine that schedules each store's music and ads every day, a web and mobile player that keeps playing offline and streams to <strong>AirPlay and Chromecast</strong> speakers, an AI support assistant powered by <strong>Google Gemini</strong> in the app and on WhatsApp, music catalog ingestion through the <strong>DDEX</strong> standard, and <strong>Stripe</strong> billing with role-based access, royalty reports and analytics.<br/><br/>
@@ -546,11 +550,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Backend Developer - BBVA Technology</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp2_title">Backend Developer - BBVA Technology</h4>
 
               <span>05/2023 — 06/2026</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp2_text">
                 Built backend and data services on <strong>Amazon Web Services</strong> (SageMaker, S3, Lambda, Step Functions, EventBridge, CloudWatch), with infrastructure managed in <strong>Terraform</strong>. Day to day I worked with <strong>Python, Rust, Bash and JavaScript</strong>, Flask, Pandas and Docker, on <strong>PostgreSQL, MySQL and MongoDB</strong>.<br/><br/>
 
                 Beyond the code: data analysis, a strong focus on testing, design patterns, SOLID and clean code, researching and sharing new technologies with the team, and helping new colleagues get up to speed.
@@ -560,11 +564,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Backend Developer - Zorraquino</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp3_title">Backend Developer - Zorraquino</h4>
 
               <span>12/2022 — 05/2023</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp3_text">
                 Developed APIs in <strong>PHP and Python</strong>, maintained <strong>GitLab CI/CD</strong> pipelines, <strong>designed data architectures</strong> and led version migrations, both for clients such as Kutxabank and ALC and for the agency's own products.
               </p>
 
@@ -572,11 +576,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Full Stack Developer -Jamenet</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp4_title">Full Stack Developer - Jamenet</h4>
 
               <span>05/2022 — 12/2022</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp4_text">
                 Maintained and evolved the <strong>Metro Bilbao</strong> website, with a <strong>Next.js</strong> front end and a <strong>Drupal / Symfony</strong> back end, working with <strong>Jira and Git</strong>. I also built web projects for small and medium-sized businesses.
               </p>
 
@@ -584,11 +588,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Full Stack Developer -NUUK Mobility Solutions</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp5_title">Full Stack Developer - NUUK Mobility Solutions</h4>
 
               <span>09/2021 — 05/2022</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp5_text">
                 Developed, maintained and improved the company's in-house products, including a motorcycle geolocation app and an integration middleware, using <strong>Node.js, Laravel, Django, Vue.js, MySQL and Docker</strong>.
               </p>
 
@@ -596,11 +600,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Full Stack Developer -Interaktell</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp6_title">Full Stack Developer - Interaktell</h4>
 
               <span>03/2021 — 08/2021</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp6_text">
                 Developer and project manager of the Online Itineraries for the <strong>Bilbao Fine Arts Museum</strong> (Museo de Bellas Artes de Bilbao), built with <strong>React, Django and MySQL</strong> during my training contract.
               </p>
 
@@ -618,18 +622,18 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-i18n="education_title">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Master's Degree in Big Data and Artificial Intelligence</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu1_title">Master's Degree in Big Data and Artificial Intelligence</h4>
 
               <span>09/2022 — 06/2023</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="edu1_text">
                   <strong>Machine learning:</strong> supervised and unsupervised algorithms and neural networks, built in Google Colab with <strong>TensorFlow, Pandas, NumPy, Matplotlib and scikit-learn</strong>, plus the BigML platform.<br/><br/>
 
                   <strong>Big Data:</strong> distributed processing with <strong>Hadoop, Hive and Spark (PySpark)</strong>, NoSQL with <strong>MongoDB</strong>, and data visualization in <strong>Power BI</strong>, using Python, <strong>Scala and R</strong>.<br/><br/>
@@ -641,11 +645,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Higher Degree in Cross-Platform Application Development (taught in English)</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu2_title">Higher Degree in Cross-Platform Application Development (taught in English)</h4>
 
               <span>09/2019 — 06/2021</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="edu2_text">
                 Two-year program taught entirely in English, focused on building desktop, web and mobile applications with <strong>Java (Hibernate), C++, MySQL, HTML, CSS and XML</strong>.
               </p>
 
@@ -1205,6 +1209,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 
   <!--
     - ionicon link
