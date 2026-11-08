@@ -6,7 +6,7 @@
 const translations = {
   es: {
     skip_link: "Saltar al contenido",
-    headline: "Project Manager y Desarrollador Backend",
+    headline: "Project Manager y desarrollador backend",
     show_contacts: "Ver contactos",
     contact_email: "Correo",
     contact_phone: "Teléfono",
@@ -39,25 +39,25 @@ const translations = {
     exp1_date: "06/2026 — Actualidad",
     exp1_text: "Lidero una <strong>plataforma SaaS de audio para retail</strong>: un único panel desde el que las cadenas de tiendas deciden qué suena en cada establecimiento, desde la música ambiental hasta las campañas publicitarias y los avisos. Me encargo del producto y el roadmap, fijo prioridades con negocio y clientes, dirijo cada versión desde el análisis hasta el despliegue e incorporo nuevos clientes e integraciones.<br/><br/>Lo más destacado de lo que hemos construido: un motor que programa cada día la música y los anuncios de cada tienda, un reproductor web y móvil que sigue sonando sin conexión y emite a altavoces <strong>AirPlay y Chromecast</strong>, un asistente de soporte con IA basado en <strong>Google Gemini</strong> dentro de la app y en WhatsApp, la ingesta del catálogo musical con el estándar <strong>DDEX</strong>, y facturación con <strong>Stripe</strong> con permisos por roles, informes de derechos de autor y analítica.<br/><br/>Stack: <strong>Python, Django, Celery, PostgreSQL, Redis, React, TypeScript, Docker, AWS, CI/CD</strong>.",
 
-    exp2_title: "Desarrollador Backend - BBVA Technology",
+    exp2_title: "Desarrollador backend - BBVA Technology",
     exp2_text: "Desarrollé servicios backend y de datos en <strong>Amazon Web Services</strong> (SageMaker, S3, Lambda, Step Functions, EventBridge, CloudWatch), con la infraestructura gestionada en <strong>Terraform</strong>. En el día a día trabajaba con <strong>Python, Rust, Bash y JavaScript</strong>, Flask, Pandas y Docker, sobre <strong>PostgreSQL, MySQL y MongoDB</strong>.<br/><br/>Más allá del código: análisis de datos, mucho foco en testing, patrones de diseño, SOLID y código limpio, investigar y compartir nuevas tecnologías con el equipo, y ayudar a los nuevos compañeros a arrancar.",
 
-    exp3_title: "Desarrollador Backend - Zorraquino",
+    exp3_title: "Desarrollador backend - Zorraquino",
     exp3_text: "Desarrollé APIs en <strong>PHP y Python</strong>, mantuve pipelines de <strong>CI/CD en GitLab</strong>, <strong>diseñé arquitecturas de datos</strong> y lideré migraciones de versión, tanto para clientes como Kutxabank y ALC como para los productos propios de la agencia.",
 
-    exp4_title: "Desarrollador Full Stack - Jamenet",
+    exp4_title: "Desarrollador full stack - Jamenet",
     exp4_text: "Mantuve y evolucioné la web de <strong>Metro Bilbao</strong>, con un front end en <strong>Next.js</strong> y un back end en <strong>Drupal / Symfony</strong>, trabajando con <strong>Jira y Git</strong>. También desarrollé proyectos web para pequeñas y medianas empresas.",
 
-    exp5_title: "Desarrollador Full Stack - NUUK Mobility Solutions",
+    exp5_title: "Desarrollador full stack - NUUK Mobility Solutions",
     exp5_text: "Desarrollé, mantuve y mejoré los productos internos de la empresa, entre ellos una app de geolocalización de motos y un middleware de integración, con <strong>Node.js, Laravel, Django, Vue.js, MySQL y Docker</strong>.",
 
-    exp6_title: "Desarrollador Full Stack - Interaktell",
+    exp6_title: "Desarrollador full stack - Interaktell",
     exp6_text: "Desarrollador y jefe de proyecto de los Itinerarios Online del <strong>Museo de Bellas Artes de Bilbao</strong>, construidos con <strong>React, Django y MySQL</strong> durante mi contrato de formación.",
 
     edu1_title: "Máster en Big Data e Inteligencia Artificial",
     edu1_text: "<strong>Machine learning:</strong> algoritmos supervisados y no supervisados y redes neuronales, en Google Colab con <strong>TensorFlow, Pandas, NumPy, Matplotlib y scikit-learn</strong>, además de la plataforma BigML.<br/><br/><strong>Big Data:</strong> procesamiento distribuido con <strong>Hadoop, Hive y Spark (PySpark)</strong>, NoSQL con <strong>MongoDB</strong> y visualización de datos en <strong>Power BI</strong>, usando Python, <strong>Scala y R</strong>.<br/><br/><strong>IA en la nube:</strong> experiencia práctica con <strong>Google Cloud (Vertex AI, Vision AI), AWS (Rekognition, Textract), IBM Cloud y Microsoft Azure</strong>.",
 
-    edu2_title: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma (impartido en inglés)",
+    edu2_title: "Grado superior en Desarrollo de Aplicaciones Multiplataforma (impartido en inglés)",
     edu2_text: "Programa de dos años impartido íntegramente en inglés, centrado en crear aplicaciones de escritorio, web y móviles con <strong>Java (Hibernate), C++, MySQL, HTML, CSS y XML</strong>."
   }
 };
