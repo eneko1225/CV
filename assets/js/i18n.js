@@ -92,7 +92,7 @@ const getInitialLanguage = function () {
     if (saved === "es" || saved === "en") return saved;
   } catch (e) { /* storage unavailable */ }
 
-  return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
+  return "es";
 };
 
 langToggle.addEventListener("click", function () {
