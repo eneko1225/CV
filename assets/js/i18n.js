@@ -106,7 +106,14 @@ const getInitialLanguage = function () {
 };
 
 langOptions.forEach(function (btn) {
-  btn.addEventListener("click", function () { setLanguage(btn.dataset.langOption); });
+  btn.addEventListener("click", function () {
+    setLanguage(btn.dataset.langOption);
+
+    // keep ?lang= in sync so the address can be shared; the #page hash stays
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", btn.dataset.langOption);
+    history.replaceState(null, "", url);
+  });
 });
 
 setLanguage(getInitialLanguage());
