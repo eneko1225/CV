@@ -63,7 +63,7 @@ const translations = {
 };
 
 const i18nElements = document.querySelectorAll("[data-i18n]");
-const langToggle = document.querySelector("[data-lang-toggle]");
+const langOptions = document.querySelectorAll("[data-lang-option]");
 const englishText = new Map();
 
 i18nElements.forEach(function (elem) { englishText.set(elem, elem.innerHTML); });
@@ -77,8 +77,11 @@ const setLanguage = function (lang) {
   });
 
   document.documentElement.lang = lang;
-  langToggle.textContent = lang === "es" ? "EN" : "ES";
-  langToggle.setAttribute("aria-label", lang === "es" ? "View in English" : "Ver en español");
+  langOptions.forEach(function (btn) {
+    const isActive = btn.dataset.langOption === lang;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", String(isActive));
+  });
 
   try { localStorage.setItem("lang", lang); } catch (e) { /* storage unavailable */ }
 };
@@ -95,8 +98,8 @@ const getInitialLanguage = function () {
   return "es";
 };
 
-langToggle.addEventListener("click", function () {
-  setLanguage(document.documentElement.lang === "es" ? "en" : "es");
+langOptions.forEach(function (btn) {
+  btn.addEventListener("click", function () { setLanguage(btn.dataset.langOption); });
 });
 
 setLanguage(getInitialLanguage());
